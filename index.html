@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+</head>
+<style>
+  .container{
+    font-size: 40px;
+  }
+
+    .box{  
+   border: 2px solid black;
+   margin: 2px;
+  }
+  @media screen and (min-width: 1440px) {
+    .box2 {
+    display: none}
+    .box3 {
+    display: none}
+    .box4 {
+    display: none}
+
+  }
+  @media screen and (min-width: 1024px) and (max-width: 1440px){
+    .box1 {
+    display: none}
+    .box3 {
+    display: none}
+    .box4 {
+    display: none}
+  }
+  @media screen and (min-width: 768px) and (max-width: 1024px){
+    .box1 {
+    display: none}
+    .box2 {
+    display: none}
+    .box4 {
+    display: none}
+  }
+  
+  @media screen and (min-width: 1px) and (max-width: 768px){
+    .box1 {
+    display: none}
+    .box2 {
+    display: none}
+    .box3 {
+    display: none}
+  }
+
+  .box1{
+    background-color: #208B21;
+   text-align: center;
+   border-radius: 5%;
+   height: 850px;
+   width: 650px
+   
+   
+  }
+  .box2{
+    background-color: #B0882F;
+    text-align: center;
+    border-radius: 5%;
+    height: 650px;
+    width: 650px;
+  }
+  .box3{
+    background-color: #75FBFD;
+    text-align: center;
+    border-radius: 5%;
+    height: 650px;
+    width: 650px;
+    
+    
+
+  }
+  .box4{
+    background-color: #CA3142;
+    text-align: center;
+    height: 350px;
+    width: 350px;
+    border-radius: 5%;
+   
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="box box1">This is a Media Query demo page.<br>Screen size : 1440px</div>
+    <div class="box box2">This is a Media Query demo page.<br>Screen size : 1024px</div>
+    <div class="box box3">This is a Media Query demo page.<br>Screen size : 768px</div>
+    <div class="box box4">This is a Media Query demo page.<br>Screen size : 425px</div>
+  </div>
+</body>
+
+</html>
